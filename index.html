@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Issues Tracker</title>
+    <link rel="shortcut icon" href="assets/github-logo.png" type="image/x-icon">
+
+    <!-- tailwindcss + daisyUI -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<!--google font -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+
+<style>
+    *{
+        font-family: 'Geist', sans-serif;
+    }
+</style>
+
+
+</head>
+<body class="min-h-screen max-w-md bg-base-200 mx-auto border border-gray-300 rounded-lg shadow-lg">
+    <div class="logo w-full pt-20 items-center text-center justify-center flex flex-col gap-4">
+        <img src="assets/github-logo.png" alt="">
+        <h1 class="text-2xl font-semibold">GitHub Issues Tracker</h1>
+        <p class="text-[#64748B]">Sign in to manage your issues</p>
+
+        <div class="from w-full flex items-center justify-center">
+             <div class="card bg-base-200 w-full max-w-sm shrink-0 shadow mx-20 rounded-2xl">
+      <div class="card-body w-full mx-auto">
+        <fieldset class="fieldset">
+          <label class="label font-medium">Username</label>
+          <input type="text" class="input w-full mx-auto" placeholder="Enter Username"/>
+           <label class="label text-[#4A00FF] font-Regular">Default: admin</label>
+          <label class="label font-medium">Password</label>
+          <input type="password" class="input w-full mx-auto" placeholder="Enter Password" />
+          <label class="label text-[#4A00FF] font-Regular">Default: admin123</label>
+          <br>
+          <button class="btn btn-primary w-full mx-auto">Login</button>
+        </fieldset>
+      </div>
+    </div>
+        </div>
+
+
+
+    </div>
+</body>
+</html>
