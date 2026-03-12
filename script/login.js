@@ -1,4 +1,27 @@
-console.log("Hello World!");
+
+
+
+const loadLesson=()=>{
+    fetch("https://phi-lab-server.vercel.app/api/v1/lab/issues")
+    .then((res)=> res.json())
+    .then((json) => displayLesson(json.data));
+};
+
+const displayLesson = (lesson)=>{
+    const levelContainer = document.getElementById("level-container");
+      levelContainer.innerHTML = "";
+    for(const lesson of lessons){
+        const btnDiv = document.createElement("div");
+        btnDiv.innerHTML=`<button class="bg-blue-500 text-white px-4 py-2 rounded-lg">All</button>
+        `;
+        levelContainer.appendChild(btnDiv);
+    }
+
+
+    
+
+};
+loadLesson();
 
 
 
